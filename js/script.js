@@ -1,5 +1,10 @@
 $( function() {
     
+    $( '#mobile-nav-button' ).on( 'click', function() {
+     
+        $( '#mobile-nav-links' ).toggle();
+    });
+    
     $( '.delete-button' ).on( 'click', function() {
         
         var confimation = confirm( 'Are you sure?' );

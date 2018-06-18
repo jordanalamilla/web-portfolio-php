@@ -169,6 +169,9 @@ textarea {
 
 /* ========== NAVIGATION ========== */
 
+#desktop-nav { display: block; }
+#mobile-nav { display: none; }
+
 nav {
     position: fixed;
     top:  0;
@@ -186,15 +189,15 @@ nav {
     height: 55px;
 }
 
-#nav-links {
+.nav-links {
     float: right;
 }
 
-#nav-links li {
+.nav-links li {
     display: inline-block;
 }
 
-#nav-links a {
+.nav-links a {
     margin: 5px;
     line-height: 50px;
     color: #5f5f5f;
@@ -203,11 +206,11 @@ nav {
     text-decoration: none;
 }
 
-#nav-links a:hover {
+.nav-links a:hover {
     border-bottom: 2px solid #5f5f5f;
 }
 
-#nav-links a {
+.nav-links a {
     transition: 0s;
 }
 
@@ -233,6 +236,7 @@ nav {
 #home-image {
     width: 40vh;
     max-width: 390px;
+    min-width: 260px;
 }
 
 #home-buttons {
@@ -353,3 +357,117 @@ footer section {
 
 /* ========== MOBILE ========== */
 
+@media only screen and (max-width: 600px) {
+
+    /* ========== NAVIGATION ========== */
+    
+    #desktop-nav { display: none; }
+    
+    #mobile-nav {
+        display: block;
+    }
+    
+    nav {
+        width: 90%;
+        padding: 0 5%;
+    }
+    
+    #mobile-nav-button {
+        float: right;
+        line-height: 50px;
+    }
+    
+    .genericons-neue-menu { fill: #000; }
+    
+    #mobile-nav-links {
+        display: none; /*HERE*/
+        width: 100%;
+        text-align: left;
+    }
+    
+    #mobile-nav-links li {
+        display: block;
+        line-height: 50px;
+    }
+    
+    /* ========== COMMON ========== */
+    
+    main, #footer-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    main {
+        clear: both;
+        margin-top: 60px;
+        min-height: 680px;
+    }
+    
+    h2 { margin-top: 0; }
+    
+    h3 {
+        font-size: 120%;
+    }
+    
+    #home-buttons li {
+        padding-right: 10px; 
+    }
+    
+    /* ========== HOME ========== */
+    
+    #home-intro {
+        position: static;
+        transform: none;
+    }
+    
+    #home-image {
+        width: 30vh;
+        margin: 20px 0;
+    }
+    
+    #home-intro p {
+        text-align: left;
+    }
+    
+    #home-intro h2 {
+        font-size: 12vw;
+    }
+    
+    #home-buttons li {
+        padding-right: 10px;
+    }
+    
+    #contact-me-button {
+        margin-bottom: 20px;
+    }
+    
+    /* ========== ARTICLES ========== */
+    
+/*
+    article {
+        background-color: #FFF;
+        padding: 20px 20px 50px 20px;
+        border-radius: 5px;
+    }
+*/
+    
+    .item-extra {
+        text-align: center;
+    }
+    
+    /* ========== FOOTER ========== */
+    
+    footer {
+        font-size: 100%;
+    }
+    
+    footer section {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    #footer-navigation, #footer-social
+    { text-align: left; }
+    
+}
