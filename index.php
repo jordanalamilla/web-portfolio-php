@@ -12,6 +12,10 @@ include( 'top.php' ); ?>
              src="images/home/computer.gif"
              alt="An animated gif of a computer writing code." />
 
+        <img id="mobile-home-image"
+             src="images/home/computer-dark.gif"
+             alt="An animated gif of a computer writing code." />
+
         <h2>Jordan Alamilla</h2>
 
         <p>Hi there, I'm a web developer. My skills include both front and back end technologies, making me a versatile addition to any team. I'm passionate about creating optimized code and simple, yet functional design.</p>

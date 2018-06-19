@@ -233,7 +233,10 @@ nav {
     max-width: 700px;
 }
 
-#home-image {
+#home-image { display: inline-block; }
+#mobile-home-image { display: none; }
+
+#home-image, #mobile-home-image {
     width: 40vh;
     max-width: 390px;
     min-width: 260px;
@@ -365,6 +368,7 @@ footer section {
     
     #mobile-nav {
         display: block;
+        background-color: #0c0c0c;
     }
     
     nav {
@@ -372,12 +376,27 @@ footer section {
         padding: 0 5%;
     }
     
+    h1 a, #mobile-nav-link {
+        color: #e0e0e0;
+    }
+    
+    #mobile-nav-button {
+        background-color: transparent;
+    }
+    
+    #mobile-nav-button img {
+        width: 20px;
+        padding: 15px 0 15px 30px;
+    }
+    
     #mobile-nav-button {
         float: right;
         line-height: 50px;
     }
     
-    .genericons-neue-menu { fill: #000; }
+    #mobile-nav-links a {
+        color: #e0e0e0;
+    }
     
     #mobile-nav-links {
         display: none; /*HERE*/
@@ -391,6 +410,15 @@ footer section {
     }
     
     /* ========== COMMON ========== */
+    
+    body {
+        background-color: #171719;
+        color: #5f5f5f;
+    }
+    
+    h1, h2, h3, h4 {
+        color: #e0e0e0;
+    }
     
     main, #footer-container {
         width: 90%;
@@ -413,6 +441,16 @@ footer section {
         padding-right: 10px; 
     }
     
+    .low {
+        color: #e0e0e0;
+        background-color: #5f5f5f;
+    }
+    
+    .high {
+        color: #e0e0e0;
+        background-color: #9e4b4b;
+    }
+    
     /* ========== HOME ========== */
     
     #home-intro {
@@ -420,13 +458,18 @@ footer section {
         transform: none;
     }
     
-    #home-image {
+    #home-image { display: none; }
+    #mobile-home-image { display: inline-block; }
+    
+    #mobile-home-image {
         width: 30vh;
         margin: 20px 0;
     }
     
     #home-intro p {
         text-align: left;
+        color: #5f5f5f;
+        font-size: 80%;
     }
     
     #home-intro h2 {
@@ -443,13 +486,9 @@ footer section {
     
     /* ========== ARTICLES ========== */
     
-/*
-    article {
-        background-color: #FFF;
-        padding: 20px 20px 50px 20px;
-        border-radius: 5px;
+    .article-image {
+        opacity: 1;
     }
-*/
     
     .item-extra {
         text-align: center;
@@ -459,6 +498,7 @@ footer section {
     
     footer {
         font-size: 100%;
+        background-color: #0c0c0c;
     }
     
     footer section {
@@ -469,5 +509,9 @@ footer section {
 
     #footer-navigation, #footer-social
     { text-align: left; }
+    
+    footer a {
+        color: #3e3e3e;
+    }
     
 }

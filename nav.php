@@ -43,12 +43,8 @@
     <button class="nav-link"
             id="mobile-nav-button">
         
-        Menu
-<!--        <i class="fas fa-camera-retro"></i>-->
-<!--
-        <img src="font/menu.svg"
-             alt="menu" />
--->
+        <img src="images/site/menu.png" alt="menu" />
+        
     </button>
     
     <ul class="nav-links"
